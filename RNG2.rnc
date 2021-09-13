@@ -1,0 +1,22 @@
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+start = xml
+
+xml = element xml {recipe}
+
+recipe = element recipe {title, heading, ingredients, directions}
+title = element title {text}
+heading = element heading {text}
+ingredients = element ingredients {item, text}
+item = element item {type, size}
+type= attribute type {text}
+size = attribute size {text}
+directions = element directions {step, action?, time?, ingr}
+step = element step {text}
+action = element action {text}
+ingr = element ingr {ref}
+time = element time {qty, unit}
+qty = attribute qty {text}
+unit = attribute unit {text}
+
+element test { xsd:double }

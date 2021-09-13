@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="relax/cookieRelax.rnc" type="application/relax-ng-compact-syntax"?>
+<XML>
+
+    <recipe>
+        <title>Original <brand>NESTLÉ TOLL HOUSE</brand>
+            <ingredient type="chocolate">Chocolate Chip</ingredient> Cookies</title>
+        <br/>
+        <heading>Level</heading> Easy <heading>Prep</heading> 15 minutes <heading>Cook</heading> 9
+        minutes <heading>Servings</heading> 5 dozen cookies <br/>
+        <p>The chocolate chip cookie that started it all! NESTLÉ® TOLL HOUSE® original chocolate
+            chip cookies are a true classic and the go-to cookie for all occasions!</p>
+        <br/>
+        <heading>Ingredients</heading>
+        <ingredients>
+            <item xml:id="flour" qty="2.25" unit="cup">2 1/4 cups all-purpose flour</item>
+            <item xml:id="bsoda" qty="1" unit="teaspoon">1 teaspoon baking soda</item>
+            <item xml:id="salt" qty="1" unit="teaspoon">1 teaspoon salt</item>
+            <item xml:id="butter" qty="1" unit="cup">1 cup (2 sticks) butter, softened</item>
+            <item xml:id="sugar" qty=".75" unit="cup">3/4 cup granulated sugar</item>
+            <item xml:id="bsugar" qty=".75" unit="cup">3/4 cup packed brown sugar </item>
+            <item xml:id="vanilla" qty="1" unit="teaspoon">1 teaspoon vanilla extract</item>
+            <item xml:id="eggs" qty="2">2 large eggs</item>
+            <item xml:id="chchips" qty="2" unit="cups">2 cups (12-ounce package) NESTLÉ® TOLL HOUSE®
+                Semi-Sweet Chocolate Morsels</item>
+            <item xml:id="chnuts" qty="1" unit="cup">1 cup chopped nuts <item name="flour" qty="1.5"
+                    unit="tablespoon">(Optional. If omitting, add 1 to 2 Tbsp. of all-purpose
+                    flour.)</item></item>
+        </ingredients>
+        <br/>
+        <directions>
+            <step>Step 1 <action>Preheat</action> oven to <temp set="375" unit="fahrenheit">375°
+                    F.</temp></step>
+            <step>Step 2 <action>Combine</action>
+                <ingr ref="#flour">flour</ingr>, <ingr ref="#bsoda">baking soda</ingr> and <ingr
+                    ref="#salt">salt</ingr> in <item type="bowl" size="small">small bowl</item>.
+                    <action>Beat</action>
+                <ingr ref="#butter">butter</ingr>, <ingr ref="#sugar">granulated sugar</ingr>, brown
+                sugar and vanilla extract in large mixer <item type="bowl" size="large">bowl</item>
+                until creamy. <action>Add</action> eggs, one at a time, <action>beating</action>
+                well after each addition. Gradually <action>beat</action> in flour mixture.
+                    <action>Stir</action> in morsels and nuts. Drop by rounded tablespoon onto
+                ungreased <item type="baking sheet">baking sheets</item>.</step>
+            <step>Step 3 <action>Bake</action> for <time qty="9,11" unit="minutes">9 to 11
+                    minutes</time> or until golden brown. <action>Cool</action> on baking sheets for
+                    <time qty="2" unit="minutes">2 minutes</time>; <action>remove</action> to wire
+                racks to cool completely.</step>
+            <step>For High Altitude Baking (5,200 feet): <action>Increase</action> flour to 2 1/2
+                cups. <action>Add</action> 2 teaspoons water with flour and <action>reduce</action>
+                both granulated sugar and brown sugar to 2/3 cup each. <action>Bake</action> drop
+                cookies for <time qty="8,10" unit="minutes">8 to 10 minutes</time> and pan cookie
+                for <time qty="17,19" unit="minutes">17 to 19 minutes</time>.</step>
+        </directions>
+    </recipe>
+
+
+</XML>
