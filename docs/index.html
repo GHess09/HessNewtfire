@@ -1,32 +1,84 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-    <head>
-        <title>My NewtFire Homepage</title>
-        <meta charset="UTF-8" />
-        <meta name="author" content="Garrett Hess" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="webstyle.css" />
-        
-    </head>
-    <!--This page is published at https://newtfire.org/~gmh5321/ -->
-    <body>
-        <h1>Hello, Everyone!</h1>
-        <h2>I'm Garrett Hess</h2>
-        <h3></h3>
-        <p>Welcome to my site.</p>
-        <img src="images/me.jpg" alt="A self portrait"/>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="C:\Users\ghess\Documents\GitHub\digit400\HessNewtfire\docs\index.css">
 
-		
-        <ol>
-		<h3>Some of my interests are:</h3>
-            <li>Photography</li>
-            <li>Film</li>
-            <li>Writing</li>
-            <li>Design</li>
-        </ol>
-		</br>
-		<p>Here is my <a href="https://github.com/GHess09/testDigit">Github respository</a></p>
-        
-        <p>We are at <a href="https://behrend.psu.edu/">Penn State Erie, The Behrend College</a>.</p>
-    </body>
+
+<div class="about-section">
+  <h1>Garrett Hess</h1>
+  <p>This is my personal site where I have some of my creative endevours. Please
+  feel free to explore!</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team1.jpg" alt="Digit400" style="width:100%">
+      <div class="container">
+        <h2>Digit 400</h2>
+        <p class="title">This was a project design course where I helped build
+		a website about the trees of Behrend Campus.</p>
+        <p>Check out my project!</p>
+        <p><button class="button">See More!</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team2.jpg" alt="Photo" style="width:100%">
+      <div class="container">
+        <h2>Photography</h2>
+        <p class="title">These are some of my favorite photographs I've captured. I love to 
+		capture the beauty of landscapes and nature.</p>
+        <p>Check out my gallery!</p>
+        <<button type="button" class="collapsible">Choose a Gallery</button>
+<div class="content">
+  <p>This Is Erie</p>
+  <p>Seascapes</p>
+  <p>Into the Forest</p>
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team3.jpg" alt="img" style="width:100%">
+      <div class="container">
+        <h2>Other Projects</h2>
+        <p class="title">Title</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>lorem ipsum</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
 </html>
